@@ -2,4 +2,4 @@
 
 This is my Portfolio site.
 
-[View Site] (https://jihohannma.github.io/Portfolio/)
+[View Site](https://jihohannma.github.io/Portfolio/)
