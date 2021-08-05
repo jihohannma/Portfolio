@@ -133,6 +133,21 @@ section {
     margin-bottom: 6em;
 }
 
+/* FLEX GRID */
+@media(min-width: 768px) {
+    .row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1em;
+    }
+    .one-third.column {
+        width: 32%;
+    }
+    .two-thirds.column {
+        width:60%;
+    }
+}
+
 /* THUMBGRID */
 .thumbgrid {
     display: flex;
@@ -159,3 +174,69 @@ section {
 .thumbgrid a:hover img {
     filter: brightness(1);
 }
+
+
+
+/* PAGE FADE-INs */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+main,
+fade-in {
+  opacity: 0;
+  animation: fade-in ease-in-out 1;
+  animation-fill-mode: forwards;
+  animation-duration: 0.5s;
+}
+
+@keyframes fade-and-move-in {
+    from {
+      transform: translate(0, -20px);
+      opacity: 0;
+    }
+    to {
+      transform: translate(0, 0);
+      opacity: 1;
+    }
+  }
+
+.fade-and-move-in * {
+    opacity: 0;
+    animation: fade-and-move-in ease-out 1;
+    animation-fill-mode: forwards;
+    animation-duration: 0.5s;
+}
+
+.fade-and-move-in *:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+  .fade-and-move-in *:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  .fade-and-move-in *:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+  .fade-and-move-in *:nth-child(4) {
+    animation-delay: 0.7s;
+  }
+  .fade-and-move-in *:nth-child(5) {
+    animation-delay: 1s;
+  }
+  .fade-and-move-in *:nth-child(6) {
+    animation-delay: 1.2s;
+  }
+  .fade-and-move-in *:nth-child(7) {
+    animation-delay: 1.4s;
+  }
+  .fade-and-move-in *:nth-child(8) {
+    animation-delay: 1.6s;
+  }
+  .fade-and-move-in *:nth-child(9) {
+    animation-delay: 1.8s;
+  }
