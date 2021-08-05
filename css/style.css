@@ -54,6 +54,24 @@ a:hover {
     text-align: center;
 }
 
+.subheader {
+    color: rgba(0,0,0,.5);
+    font-weight: normal;
+}
+
+.full-width {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+.full-width img {
+    width: 100%;
+}
+
 /* IMAGES */
 img {
     max-width: 100%;
@@ -107,6 +125,12 @@ li {
 
 section {
     padding: 0 0 3em 0;
+}
+
+.hero {
+    padding: 4em 0;
+    background: #dedede;
+    margin-bottom: 6em;
 }
 
 /* THUMBGRID */
