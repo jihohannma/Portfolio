@@ -54,6 +54,13 @@ a:hover {
     text-align: center;
 }
 
+.text-centered p,
+.mywufooform {
+    max-width: 40em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .subheader {
     color: rgba(0,0,0,.5);
     font-weight: normal;
@@ -76,6 +83,28 @@ a:hover {
 img {
     max-width: 100%;
     height: auto;
+}
+
+img.circular {
+    border-radius: 100%;
+    max-width: 50%;
+}
+
+/* BUTTONS */
+a.button {
+    display: inline-block;
+    background-color: rgba(0,0,0,.2);
+    color: rgba(255,255,255,1);
+    border-radius: .5em;
+    padding: 1em 2em .8em 2em;
+    margin: .5em;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-size: 0.9em;
+}
+
+a.button:hover {
+    background-color: rgba(0,0,0,.5);
 }
 
 /* SITE STRUCTURE */
