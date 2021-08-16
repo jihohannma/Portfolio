@@ -84,6 +84,11 @@ img {
     height: auto;
 }
 
+.scale-with-grid {
+    max-width: 100%;
+    height: auto;
+}
+
 img.circular {
     border-radius: 100%;
     max-width: 50%;
@@ -194,15 +199,18 @@ section {
 }
 
 .thumbgrid a img {
-    filter: brightness(1.05);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
     transition: all-ease-in-out 0.2s;
     border: 1px solid rgba(255,255,255,0);
 }
 
 .thumbgrid a:hover img {
-    filter: brightness(1);
+    -webkit-transform: scale(1.1);
+	transform: scale(1.1);
 }
-
 
 
 /* PAGE FADE-INs */
